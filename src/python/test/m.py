@@ -29,6 +29,16 @@ if (!lie) {
 
 すごい！
 '''
+import os
 
-md = markdown.Markdown()
-print(md.convert(sample_text))
+
+def cd():
+    os.chdir(os.path.dirname(__file__))
+
+
+if __name__ == "__main__":
+    cd()
+    with open("../../../../../blog/virtualboxとwsl2どっち論争.md", encoding="utf-8") as target:
+        sample_text = target.read()
+    md = markdown.Markdown()
+    print(md.convert(sample_text))
