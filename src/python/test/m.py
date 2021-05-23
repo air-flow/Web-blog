@@ -38,7 +38,7 @@ def cd():
 
 if __name__ == "__main__":
     cd()
-    with open("../../../../../blog/virtualboxとwsl2どっち論争.md", encoding="utf-8") as target:
+    with open("../../../doc/content/test.md", encoding="utf-8") as target:
         sample_text = target.read()
     md = markdown.Markdown()
     print(md.convert(sample_text))

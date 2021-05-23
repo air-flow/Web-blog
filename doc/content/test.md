@@ -82,14 +82,14 @@ mysql/server
 モジュールの無効化:
 mysql
 
-```
+````
 </div>
 
 <h2>MySQLのインストール</h2>
 <div class="code-title" data-title="sh">
 ```sh
 sudo yum install mysql-community-server
-```
+````
 
 </div>
 
@@ -178,14 +178,14 @@ mysql-community-server-8.0.23-1.el8.x86_64
 
 完了しました!
 
-```
+````
 </div>
 
 <h2>MySQLサーバーの起動</h2>
 <div class="code-title" data-title="sh">
 ```sh
 sudo systemctl start mysqld
-```
+````
 
 </div>
 
@@ -218,7 +218,7 @@ mysql>
 構築でした。</p>
 <p>リポジトリの追加等はインターネットにつながってないとできないのであしからず。</p>
 <p>原因は、ネットワークの有効化をしていないでした。</p>
-<p>今回の記事は、MySQL5系から8系のメジャーバージョンアップグレードはかなりの記事があるのですが 
+<p>今回の記事は、MySQL5系から8系のメジャーバージョンアップグレードはかなりの記事があるのですが
 、マイナーバージョンアップはないので記録としても使用したいので記事にしました。</p>
-<p>次からは今回アップグレードした環境を使用してMySQL8.0.23の機能を試してみたいと思います。     
+<p>次からは今回アップグレードした環境を使用してMySQL8.0.23の機能を試してみたいと思います。
 </p>
