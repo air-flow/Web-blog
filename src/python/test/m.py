@@ -40,5 +40,7 @@ if __name__ == "__main__":
     cd()
     with open("../../../doc/content/test.md", encoding="utf-8") as target:
         sample_text = target.read()
-    md = markdown.Markdown()
+    md = markdown.Markdown(extensions=[
+        "fenced_code",
+    ])
     print(md.convert(sample_text))
