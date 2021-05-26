@@ -1,7 +1,7 @@
 $(function () {
   $("#new").on("click", function () {
     result = api("new");
-    $("#content").append(result["item"]);
+    $("#content").append(result);
   });
 });
 
