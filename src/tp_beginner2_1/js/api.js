@@ -1,8 +1,6 @@
 $(function () {
-  $("#new").on("click", function () {
-    result = api("new");
-    $("#content").append(result);
-  });
+  result = api("new");
+  $("#content").append(result);
 });
 
 function api(type) {
@@ -10,7 +8,7 @@ function api(type) {
   $.ajax({
     type: "GET",
     url: "",
-    data: JSON.stringify({ eventType: type }),
+    data: { eventType: type },
     dataType: "json",
   })
     .done(function (data) {
