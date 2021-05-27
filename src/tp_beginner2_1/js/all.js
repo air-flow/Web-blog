@@ -3,6 +3,14 @@ $(function () {
   $("#newinfo_hdr").append(result["result"]);
 });
 
+function dt_dom(data) {
+  data.forEach((e) => {
+    temp = e.title;
+    c = e.create_timestamp;
+    $("#newinfo").append("<dt>" + c + "</dt><dd>" + temp + "</dd>");
+  });
+}
+
 function api(type) {
   result = "";
   $.ajax({
@@ -10,6 +18,7 @@ function api(type) {
     url: "",
     data: { eventType: type },
     dataType: "json",
+    async: false,
   })
     .done(function (data) {
       // 通信成功時の処理を記述
