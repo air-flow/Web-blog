@@ -1,9 +1,6 @@
 $(function () {
   result = JSON.parse(api("all"));
   $("#newinfo_hdr").append(result["result"]);
-  $(".blog").on("click", function () {
-    localStorage.setItem("data", $(this).attr("id"));
-  });
 });
 
 function dt_dom(data) {
