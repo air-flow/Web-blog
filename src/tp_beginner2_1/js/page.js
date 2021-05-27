@@ -10,6 +10,23 @@ function dt_dom(data) {
     $("#newinfo").append("<dt>" + c + "</dt><dd>" + temp + "</dd>");
   });
 }
+<dl id="newinfo">
+</dl>
+
+
+<h2>name</h2>
+<dl id="newinfo">
+<dt>2017/02/17</dt>
+  <dd>初心者向け無料ホームページテンプレートtp_beginner2公開。</dd>
+
+</dl>
+function dt_dom(data) {
+    data.forEach((e) => {
+      temp = e.title;
+      c = e.create_timestamp;
+      $("#newinfo").append("<dt>" + c + "</dt><dd>" + temp + "</dd>");
+    });
+  }
 
 function api(type) {
   result = "";
