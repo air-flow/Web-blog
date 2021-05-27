@@ -2,7 +2,7 @@ $(function () {
   result = JSON.parse(api("all"));
   $("#newinfo_hdr").append(result["result"]);
   $(".blog").on("click", function () {
-    localStorage.setItem("data", $(this).attr("id"));
+    localStorage.setItem("data", $(this).parent().attr("id"));
   });
 });
 
@@ -10,7 +10,14 @@ function dt_dom(data) {
   data.forEach((e) => {
     temp = e.title;
     c = e.create_timestamp;
-    $("#newinfo").append("<dt>" + c + "</dt><dd>" + temp + "</dd>");
+    <a href="../page.html" class="blog"></a>;
+    $("#newinfo").append(
+      "<dt>" +
+        c +
+        '</dt><a href="../page.html" class="blog"><dd>' +
+        temp +
+        "</dd></a>"
+    );
   });
 }
 
