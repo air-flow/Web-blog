@@ -3,19 +3,11 @@ $(function () {
   $("#newinfo_hdr").append(result["result"]);
 });
 
-function dt_dom(data) {
+function p_dom(data) {
   data.forEach((e) => {
-    temp = e.title;
-    c = e.create_timestamp;
-    $("#newinfo").append("<dt>" + c + "</dt><dd>" + temp + "</dd>");
-  });
-}
-
-function dt_dom(data) {
-  data.forEach((e) => {
-    temp = e.title;
-    c = e.create_timestamp;
-    $("#newinfo").append("<dt>" + c + "</dt><dd>" + temp + "</dd>");
+    temp = e.name;
+    c = e.id;
+    $("#newinfo").append("<p id=" + id + ">" + c + "</p>");
   });
 }
 
